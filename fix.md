@@ -1,61 +1,71 @@
-Excellent! It seems like there are some styling inconsistencies on your "Our Solutions" page. Here is a detailed prompt you can provide to an AI to help resolve the issue, complete with code snippets for clarity.
 
-***
 
-### Prompt for AI Assistant:
+### Recommended Prompt for AI Assistant:
 
-"Hello, I have been working on a new version of my website and have encountered a styling issue on the 'Our Solutions' page (`solutions.html`). The layout appears broken compared to the original master version. I need your help to fix it.
+Hello, I need your help fixing a broken CSS grid layout on my new single-page application website. The "Our Solutions" page is not displaying correctly.
 
-The primary problem is that the detailed solution sections, which should be arranged in a two-column grid (text on one side, visual diagram on the other), are instead stacking vertically. Also, the visual diagrams themselves seem to be misaligned or not displaying as intended.
+**1. The Goal:**
 
-To help you fix this, I will provide the relevant HTML structure from `solutions.html` and the CSS from `css/solutions.css`.
+The goal is to restore the two-column layout for each "Solution Detail" section on the "Our Solutions" page. Each section should display text content on one side and a visual diagram on the other, side-by-side on desktop views.
 
-#### **1. The Problematic HTML Structure in `solutions.html`**
+**2. The Problem:**
 
-The structure for each solution detail section seems to be missing the correct two-column layout. Here is the current, incorrect structure for the "Workflow & Process Automation" section:
+After converting my multi-page website into a single-page app (where all pages are now sections within `index.html`), the layout for the solutions sections broke. Instead of a two-column grid, the text content and the visual diagram are stacking vertically.
+
+**3. Correct vs. Broken Behavior:**
+
+*   **This is the CORRECT layout from my original `solutions.html` page:**
+     (Conceptual Image: Text and visual side-by-side)
+
+*   **This is the BROKEN layout on my new `index.html` page:**
+     (Conceptual Image: Text stacked on top of visual)
+
+**4. Relevant Code:**
+
+The two-column layout is controlled by the `.solution-detail__content` class in `css/solutions.css`. It is styled as a grid container:
+
+```css
+/* From: css/solutions.css */
+.solution-detail__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}```
+
+For this CSS to work, the HTML structure must have the text block (`.solution-detail__text`) and the visual block (`.solution-detail__visual`) as **direct children** of the `.solution-detail__content` element.
+
+This is the correct HTML structure from my original, working `solutions.html` file:
 
 ```html
-<!-- INCORRECT STRUCTURE from solutions.html -->
+<!-- CORRECT HTML STRUCTURE -->
 <section class="solution-detail">
     <div class="container">
         <div class="solution-detail__content">
+            <!-- Direct Child 1 -->
             <div class="solution-detail__text">
-                <!-- All text content is here -->
+                <!-- All text content, headers, lists, etc. -->
             </div>
-            
+            <!-- Direct Child 2 -->
             <div class="solution-detail__visual">
-                <!-- The visual diagram is here -->
+                <!-- The visual diagram SVG/divs -->
             </div>
         </div>
     </div>
 </section>
 ```
 
-#### **2. Analysis of the CSS in `css/solutions.css`**
+**5. Your Task:**
 
-I suspect the issue might be related to how the `.solution-detail__content` class is styled or how its child elements (`.solution-detail__text` and `.solution-detail__visual`) are being targeted.
+I suspect that when I copied the content into my new `index.html` file, I may have nested the elements incorrectly.
 
-Here is the relevant CSS from `css/solutions.css` which is intended to create the two-column layout:
+Please perform the following steps:
 
-```css
-/* Relevant CSS from css/solutions.css */
-.solution-detail__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-3xl);
-  align-items: center;
-}
-```
+1.  **Analyze the HTML:** Carefully inspect the HTML structure within the `<section id="solutions" class="page">` block in the provided `index.html` file.
+2.  **Identify the Structural Error:** For each of the three `.solution-detail` sections, check if `.solution-detail__text` and `.solution-detail__visual` are direct children of the `.solution-detail__content` grid container.
+3.  **Provide the Corrected HTML:** Rewrite the complete `<section id="solutions" class="page">` block with the corrected HTML structure for all three solution sections, ensuring the layout matches the CSS requirements.
 
-This CSS is designed to make `.solution-detail__content` a grid container, but for some reason, its children are not aligning correctly side-by-side.
+**Secondary Check (If HTML is correct):**
+If you find that the HTML structure is already correct, please consider an alternative cause. Since all CSS files (`main.css`, `solutions.css`, `approach.css`, etc.) are now loaded together in the new single-page app, check for any potential CSS style conflicts that could be overriding the `grid-template-columns` property of `.solution-detail__content`.
 
-#### **3. What I Need You to Do:**
-
-Please review the provided HTML and CSS. Based on web development best practices, please provide the corrected HTML structure for the `solutions.html` page that will work with the existing CSS to restore the intended two-column layout.
-
-Specifically, I need you to:
-1.  **Analyze the relationship** between the CSS grid properties and the HTML structure.
-2.  **Rewrite the HTML** for the `.solution-detail` sections to ensure the text content and visual diagrams are direct children of the `.solution-detail__content` grid container.
-3.  **Ensure the fix is robust** and applies correctly to all three solution sections on the page ("Workflow & Process Automation", "Platform & Data Integration", and "Custom Automation Strategy").
-
-Thank you!"
+Thank you
