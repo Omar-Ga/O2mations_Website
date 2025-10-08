@@ -29,6 +29,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/solutions.css">
+    <link rel="stylesheet" href="css/approach.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <!-- Header -->
@@ -73,249 +77,1657 @@
 
     <!-- Main Content -->
     <main class="main">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero__content">
-                    <div class="hero__text">
-                        <h1 class="hero__title">
-                            The Future of Your Business is 
-                            <span class="hero__title-accent">Effortless</span>
-                        </h1>
-                        <p class="hero__subtitle">
-                            Transform your operations with intelligent automation solutions designed specifically for ambitious businesses ready to scale without limits.
+        <section id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="hero__text">
+                            <h1 class="hero__title">
+                                The Future of Your Business is 
+                                <span class="hero__title-accent">Effortless</span>
+                            </h1>
+                            <p class="hero__subtitle">
+                                Transform your operations with intelligent automation solutions designed specifically for ambitious businesses ready to scale without limits.
+                            </p>
+                            <div class="hero__actions">
+                                <a href="contact.html" class="btn btn--primary btn--large">Book a Strategy Session</a>
+                                <a href="solutions.html" class="btn btn--secondary btn--large">Explore Our Solutions</a>
+                            </div>
+                        </div>
+                        <div class="hero__visual">
+                            <div class="hero__animation">
+                                <div class="floating-elements">
+                                    <div class="element element--1"></div>
+                                    <div class="element element--2"></div>
+                                    <div class="element element--3"></div>
+                                    <div class="element element--4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Problem We Solve Section -->
+            <section class="problems">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">The Challenges Holding Your Business Back</h2>
+                        <p class="section-subtitle">
+                            We understand the operational bottlenecks that prevent ambitious businesses from reaching their full potential.
                         </p>
-                        <div class="hero__actions">
+                    </div>
+                    
+                    <div class="problems__grid">
+                        <div class="problem-card">
+                            <div class="problem-card__icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h3 class="problem-card__title">Repetitive Workflows</h3>
+                            <p class="problem-card__description">
+                                Your team spends valuable hours on manual, repetitive tasks that could be automated, preventing them from focusing on strategic, high-value work that drives growth.
+                            </p>
+                        </div>
+                        
+                        <div class="problem-card">
+                            <div class="problem-card__icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <h3 class="problem-card__title">Disconnected Systems</h3>
+                            <p class="problem-card__description">
+                                Data silos between your tools create inefficiencies, errors, and missed opportunities. Your systems work against each other instead of together.
+                            </p>
+                        </div>
+                        
+                        <div class="problem-card">
+                            <div class="problem-card__icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="problem-card__title">Growth Plateaus</h3>
+                            <p class="problem-card__description">
+                                Manual processes that worked at smaller scale now limit your growth. You need systems that scale with your ambitions, not against them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Philosophy Section -->
+            <section class="philosophy">
+                <div class="container">
+                    <div class="philosophy__content">
+                        <div class="philosophy__text">
+                            <h2 class="philosophy__title">Human-Centric Automation</h2>
+                            <p class="philosophy__description">
+                                We believe automation should amplify human potential, not replace it. Our approach focuses on eliminating the mundane so your team can concentrate on what they do best: innovating, strategizing, and building meaningful relationships.
+                            </p>
+                            <div class="philosophy__quote">
+                                <blockquote>
+                                    "Technology is best when it brings people together and frees them to focus on what truly matters."
+                                </blockquote>
+                                <cite>— O2mations Philosophy</cite>
+                            </div>
+                        </div>
+                        <div class="philosophy__visual">
+                            <div class="philosophy__graphic">
+                                <div class="connection-lines">
+                                    <div class="line line--1"></div>
+                                    <div class="line line--2"></div>
+                                    <div class="line line--3"></div>
+                                </div>
+                                <div class="nodes">
+                                    <div class="node node--human"></div>
+                                    <div class="node node--tech"></div>
+                                    <div class="node node--growth"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Solutions Overview Section -->
+            <section class="solutions-preview">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Intelligent Solutions for a Smarter Business</h2>
+                        <p class="section-subtitle">
+                            Our comprehensive approach addresses every aspect of business automation, from workflow optimization to strategic transformation.
+                        </p>
+                    </div>
+                    
+                    <div class="solutions__grid">
+                        <div class="solution-card">
+                            <div class="solution-card__header">
+                                <div class="solution-card__icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h3 class="solution-card__title">Workflow & Process Automation</h3>
+                            </div>
+                            <p class="solution-card__description">
+                                Streamline your operations with intelligent workflows that eliminate manual bottlenecks and reduce human error.
+                            </p>
+                            <ul class="solution-card__benefits">
+                                <li>Eliminate manual data entry</li>
+                                <li>Reduce processing time by 70%</li>
+                                <li>Minimize human error</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="solution-card">
+                            <div class="solution-card__header">
+                                <div class="solution-card__icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <h3 class="solution-card__title">Platform & Data Integration</h3>
+                            </div>
+                            <p class="solution-card__description">
+                                Connect your tools and create a unified data ecosystem that provides real-time insights across your entire business.
+                            </p>
+                            <ul class="solution-card__benefits">
+                                <li>Create single source of truth</li>
+                                <li>Real-time data synchronization</li>
+                                <li>Unified business intelligence</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="solution-card">
+                            <div class="solution-card__header">
+                                <div class="solution-card__icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h3 class="solution-card__title">Custom Automation Strategy</h3>
+                            </div>
+                            <p class="solution-card__description">
+                                Develop a comprehensive automation roadmap aligned with your business goals and growth trajectory.
+                            </p>
+                            <ul class="solution-card__benefits">
+                                <li>Strategic automation planning</li>
+                                <li>ROI-focused implementation</li>
+                                <li>Scalable solution architecture</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="solutions-preview__cta">
+                        <a href="solutions.html" class="btn btn--primary btn--large">Explore All Solutions</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Founders Intro Section -->
+            <section class="founders-intro">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Meet the Visionaries Behind O2mations</h2>
+                        <p class="section-subtitle">
+                            Founded by two passionate innovators with a shared vision for transforming how businesses operate.
+                        </p>
+                    </div>
+                    
+                    <div class="founders__content">
+                        <div class="founders__text">
+                            <h3 class="founders__title">Driven by Innovation, Focused on Results</h3>
+                            <p class="founders__description">
+                                Syed Umar and Omar Gamal founded O2mations with a simple yet powerful belief: every business deserves to operate at its highest potential. Together, they bring a unique combination of strategic thinking, technical expertise, and human-centered design to create automation solutions that truly transform operations.
+                            </p>
+                            <div class="founders__stats">
+                                <div class="stat">
+                                    <span class="stat__number">100+</span>
+                                    <span class="stat__label">Processes Optimized</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat__number">50+</span>
+                                    <span class="stat__label">Businesses Transformed</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat__number">85%</span>
+                                    <span class="stat__label">Average Efficiency Gain</span>
+                                </div>
+                            </div>
+                            <a href="about.html" class="btn btn--secondary">Learn More About Our Story</a>
+                        </div>
+                        
+                        <div class="founders__profiles">
+                            <div class="founder-profile">
+                                <div class="founder-profile__image">
+                                    <div class="placeholder-avatar" data-initials="SU"></div>
+                                </div>
+                                <h4 class="founder-profile__name">Syed Umar</h4>
+                                <p class="founder-profile__title">Co-Founder & Strategic Director</p>
+                            </div>
+                            
+                            <div class="founder-profile">
+                                <div class="founder-profile__image">
+                                    <div class="placeholder-avatar" data-initials="OG"></div>
+                                </div>
+                                <h4 class="founder-profile__name">Omar Gamal</h4>
+                                <p class="founder-profile__title">Co-Founder & Technical Director</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="container">
+                    <div class="cta__content">
+                        <h2 class="cta__title">Ready to Transform Your Business Operations?</h2>
+                        <p class="cta__description">
+                            Book a complimentary strategy session and discover how O2mations can help you scale efficiently and effortlessly.
+                        </p>
+                        <a href="contact.html" class="btn btn--primary btn--large">Book Your Strategy Session</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="solutions" class="page">
+            <!-- Hero Section -->
+            <section class="page-hero">
+                <div class="container">
+                    <div class="page-hero__content">
+                        <h1 class="page-hero__title">
+                            Intelligent Solutions for a 
+                            <span class="page-hero__title-accent">Smarter Business</span>
+                        </h1>
+                        <p class="page-hero__subtitle">
+                            Our comprehensive suite of automation solutions addresses every aspect of your business operations, from workflow optimization to strategic transformation. Each solution is designed with an outcome-oriented approach that delivers measurable results.
+                        </p>
+                        <div class="page-hero__stats">
+                            <div class="hero-stat">
+                                <span class="hero-stat__number">85%</span>
+                                <span class="hero-stat__label">Average Efficiency Gain</span>
+                            </div>
+                            <div class="hero-stat">
+                                <span class="hero-stat__number">70%</span>
+                                <span class="hero-stat__label">Reduction in Manual Tasks</span>
+                            </div>
+                            <div class="hero-stat">
+                                <span class="hero-stat__number">3x</span>
+                                <span class="hero-stat__label">Faster Process Execution</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Solutions Overview -->
+            <section class="solutions-overview">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Comprehensive Automation Solutions</h2>
+                        <p class="section-subtitle">
+                            Each solution is carefully crafted to address specific business challenges while working together to create a unified, efficient operation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Solution 1: Workflow & Process Automation -->
+            <section class="solution-detail">
+                <div class="container">
+                    <div class="solution-detail__content">
+                        <div class="solution-detail__text">
+                            <div class="solution-detail__header">
+                                <div class="solution-detail__icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="solution-detail__title-wrapper">
+                                    <h2 class="solution-detail__title">Workflow & Process Automation</h2>
+                                    <p class="solution-detail__tagline">Eliminate bottlenecks, amplify productivity</p>
+                                </div>
+                            </div>
+                            
+                            <p class="solution-detail__description">
+                                Transform your manual processes into intelligent, automated workflows that operate flawlessly around the clock. Our workflow automation solutions eliminate human error, reduce processing time by up to 70%, and free your team to focus on strategic initiatives that drive growth.
+                            </p>
+                            
+                            <div class="solution-benefits">
+                                <h3 class="solution-benefits__title">What This Solves For You:</h3>
+                                <ul class="solution-benefits__list">
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Eliminates manual data entry</strong> - No more copying information between systems or spreadsheets</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Reduces processing time by 70%</strong> - Tasks that took hours now complete in minutes</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Minimizes human error</strong> - Consistent, accurate results every time</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Enables 24/7 operations</strong> - Workflows continue even when your team is offline</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Provides process transparency</strong> - Real-time visibility into every step of your workflows</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="solution-examples">
+                                <h3 class="solution-examples__title">Common Applications:</h3>
+                                <div class="solution-examples__grid">
+                                    <div class="example-card">
+                                        <h4>Customer Onboarding</h4>
+                                        <p>Automated welcome sequences, document collection, and account setup</p>
+                                    </div>
+                                    <div class="example-card">
+                                        <h4>Invoice Processing</h4>
+                                        <p>From receipt to payment, completely automated financial workflows</p>
+                                    </div>
+                                    <div class="example-card">
+                                        <h4>Lead Nurturing</h4>
+                                        <p>Intelligent follow-up sequences based on prospect behavior and interests</p>
+                                    </div>
+                                    <div class="example-card">
+                                        <h4>Inventory Management</h4>
+                                        <p>Automatic reordering, stock level monitoring, and supplier communication</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-detail__visual">
+                            <div class="workflow-diagram">
+                                <div class="workflow-step" data-step="1">
+                                    <div class="step-icon"><i class="fas fa-play"></i></div>
+                                    <span class="step-label">Trigger</span>
+                                </div>
+                                <div class="workflow-arrow">→</div>
+                                <div class="workflow-step" data-step="2">
+                                    <div class="step-icon"><i class="fas fa-cog"></i></div>
+                                    <span class="step-label">Process</span>
+                                </div>
+                                <div class="workflow-arrow">→</div>
+                                <div class="workflow-step" data-step="3">
+                                    <div class="step-icon"><i class="fas fa-check"></i></div>
+                                    <span class="step-label">Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Solution 2: Platform & Data Integration -->
+            <section class="solution-detail solution-detail--alternate">
+                <div class="container">
+                    <div class="solution-detail__content">
+                        <div class="solution-detail__text">
+                            <div class="solution-detail__header">
+                                <div class="solution-detail__icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="solution-detail__title-wrapper">
+                                    <h2 class="solution-detail__title">Platform & Data Integration</h2>
+                                    <p class="solution-detail__tagline">One unified ecosystem, infinite possibilities</p>
+                                </div>
+                            </div>
+                            
+                            <p class="solution-detail__description">
+                                Break down data silos and connect your entire tech stack into a cohesive, intelligent ecosystem. Our integration solutions create seamless communication between your tools, providing real-time insights and enabling data-driven decision making across your entire organization.
+                            </p>
+                            
+                            <div class="solution-benefits">
+                                <h3 class="solution-benefits__title">What This Solves For You:</h3>
+                                <ul class="solution-benefits__list">
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Creates single source of truth</strong> - All your data unified and accessible in one place</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Real-time data synchronization</strong> - Changes in one system instantly reflect everywhere</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Unified business intelligence</strong> - Comprehensive dashboards and reporting across all platforms</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Eliminates duplicate data entry</strong> - Enter once, use everywhere automatically</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Improves data accuracy</strong> - Consistent information across all systems</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="solution-examples">
+                                <h3 class="solution-examples__title">Integration Examples:</h3>
+                                <div class="solution-examples__grid">
+                                    <div class="example-card">
+                                        <h4>CRM + Email Marketing</h4>
+                                        <p>Automatic segmentation and personalized campaigns based on customer behavior</p>
+                                    </div>
+                                    <div class="example-card">
+                                        <h4>E-commerce + Accounting</h4>
+                                        <p>Real-time financial reporting and automatic transaction categorization</p>
+                                    </div>
+                                    <div class="example-card">
+                                        <h4>Project Management + Time Tracking</h4>
+                                        <p>Automatic project updates and accurate resource allocation reporting</p>
+                                    </div>
+                                    <div class="example-card">
+                                        <h4>Support Desk + CRM</h4>
+                                        <p>Complete customer history and automated ticket routing and escalation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-detail__visual">
+                            <div class="integration-diagram">
+                                <div class="central-hub">
+                                    <i class="fas fa-database"></i>
+                                    <span>Unified Data Hub</span>
+                                </div>
+                                <div class="connected-system" data-system="1">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>E-commerce</span>
+                                </div>
+                                <div class="connected-system" data-system="2">
+                                    <i class="fas fa-users"></i>
+                                    <span>CRM</span>
+                                </div>
+                                <div class="connected-system" data-system="3">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>Analytics</span>
+                                </div>
+                                <div class="connected-system" data-system="4">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <div class="connection-lines">
+                                    <div class="connection-line" data-connection="1"></div>
+                                    <div class="connection-line" data-connection="2"></div>
+                                    <div class="connection-line" data-connection="3"></div>
+                                    <div class="connection-line" data-connection="4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Solution 3: Custom Automation Strategy -->
+            <section class="solution-detail">
+                <div class="container">
+                    <div class="solution-detail__content">
+                        <div class="solution-detail__text">
+                            <div class="solution-detail__header">
+                                <div class="solution-detail__icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="solution-detail__title-wrapper">
+                                    <h2 class="solution-detail__title">Custom Automation Strategy</h2>
+                                    <p class="solution-detail__tagline">Your roadmap to operational excellence</p>
+                                </div>
+                            </div>
+                            
+                            <p class="solution-detail__description">
+                                Develop a comprehensive, tailored automation roadmap that aligns perfectly with your business goals and growth trajectory. Our strategic approach ensures every automation initiative delivers maximum ROI while building a foundation for sustainable, scalable operations.
+                            </p>
+                            
+                            <div class="solution-benefits">
+                                <h3 class="solution-benefits__title">What This Solves For You:</h3>
+                                <ul class="solution-benefits__list">
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Strategic automation planning</strong> - Prioritized roadmap based on impact and feasibility</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>ROI-focused implementation</strong> - Every automation project delivers measurable business value</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Scalable solution architecture</strong> - Systems that grow with your business</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Risk mitigation strategies</strong> - Identify and address potential challenges before they occur</span>
+                                    </li>
+                                    <li class="solution-benefits__item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span><strong>Change management support</strong> - Ensure smooth adoption across your organization</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="solution-examples">
+                                <h3 class="solution-examples__title">Strategy Components:</h3>
+                                <div class="solution-examples__grid">
+                                    <div class="example-card">
+                                        <h4>Process Assessment</h4>
+                                        <p>Comprehensive analysis of current workflows and identification of optimization opportunities</p>
+                                    </div>
+                                    <div class="example-card">
+                                        <h4>Technology Audit</h4>
+                                        <p>Evaluation of existing tools and recommendation for strategic integrations</p>
+                                    </div>
+                                    <div class="example-card">
+                                        <h4>Implementation Roadmap</h4>
+                                        <p>Phased approach with clear milestones, timelines, and success metrics</p>
+                                    </div>
+                                    <div class="example-card">
+                                        <h4>Performance Monitoring</h4>
+                                        <p>Ongoing optimization and continuous improvement strategies</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-detail__visual">
+                            <div class="strategy-diagram">
+                                <div class="strategy-phase" data-phase="1">
+                                    <div class="phase-number">1</div>
+                                    <div class="phase-content">
+                                        <h4>Assess</h4>
+                                        <p>Current State Analysis</p>
+                                    </div>
+                                </div>
+                                <div class="strategy-phase" data-phase="2">
+                                    <div class="phase-number">2</div>
+                                    <div class="phase-content">
+                                        <h4>Plan</h4>
+                                        <p>Strategic Roadmap</p>
+                                    </div>
+                                </div>
+                                <div class="strategy-phase" data-phase="3">
+                                    <div class="phase-number">3</div>
+                                    <div class="phase-content">
+                                        <h4>Execute</h4>
+                                        <p>Phased Implementation</p>
+                                    </div>
+                                </div>
+                                <div class="strategy-phase" data-phase="4">
+                                    <div class="phase-number">4</div>
+                                    <div class="phase-content">
+                                        <h4>Optimize</h4>
+                                        <p>Continuous Improvement</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="solutions-cta">
+                <div class="container">
+                    <div class="solutions-cta__content">
+                        <h2 class="solutions-cta__title">Ready to Transform Your Operations?</h2>
+                        <p class="solutions-cta__description">
+                            Let's discuss which solution is right for your business. Book a complimentary strategy session to explore your automation opportunities.
+                        </p>
+                        <div class="solutions-cta__actions">
                             <a href="contact.html" class="btn btn--primary btn--large">Book a Strategy Session</a>
+                            <a href="approach.html" class="btn btn--secondary btn--large">Learn About Our Process</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="approach" class="page">
+            <!-- Approach Hero Section -->
+            <section class="approach-hero">
+                <div class="container">
+                    <div class="approach-hero__content">
+                        <h1 class="approach-hero__title">
+                            Your Blueprint for 
+                            <span class="approach-hero__title-accent">Transformation</span>
+                        </h1>
+                        <p class="approach-hero__subtitle">
+                            Our proven 4-step methodology ensures successful automation implementation that delivers lasting results. Every engagement follows a clear, collaborative path designed to minimize risk and maximize value.
+                        </p>
+                        <div class="approach-hero__highlight">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Proven methodology used by 50+ successful transformations</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Process Overview Section -->
+            <section class="process-overview">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">A Structured Approach to Success</h2>
+                        <p class="section-subtitle">
+                            Our methodology is built on years of experience and refined through dozens of successful implementations. Each step builds upon the previous one, ensuring a solid foundation for lasting transformation.
+                        </p>
+                    </div>
+                    
+                    <div class="process-timeline">
+                        <div class="timeline-step" data-step="1">
+                            <div class="step-visual">
+                                <div class="step-number">1</div>
+                                <div class="step-icon">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <h3 class="step-title">Discovery & Deep Dive</h3>
+                                <p class="step-duration">1-2 weeks</p>
+                                <p class="step-description">
+                                    We start by understanding your business inside and out—your processes, challenges, goals, and unique requirements.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-connector"></div>
+                        
+                        <div class="timeline-step" data-step="2">
+                            <div class="step-visual">
+                                <div class="step-number">2</div>
+                                <div class="step-icon">
+                                    <i class="fas fa-drafting-compass"></i>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <h3 class="step-title">Strategic Design</h3>
+                                <p class="step-duration">1-2 weeks</p>
+                                <p class="step-description">
+                                    We create a comprehensive automation strategy with detailed blueprints, timelines, and success metrics.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-connector"></div>
+                        
+                        <div class="timeline-step" data-step="3">
+                            <div class="step-visual">
+                                <div class="step-number">3</div>
+                                <div class="step-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <h3 class="step-title">Precision Implementation</h3>
+                                <p class="step-duration">2-8 weeks</p>
+                                <p class="step-description">
+                                    We build, test, and deploy your automation solutions with rigorous quality control and minimal disruption.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-connector"></div>
+                        
+                        <div class="timeline-step" data-step="4">
+                            <div class="step-visual">
+                                <div class="step-number">4</div>
+                                <div class="step-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <h3 class="step-title">Partnership & Evolution</h3>
+                                <p class="step-duration">Ongoing</p>
+                                <p class="step-description">
+                                    We provide continuous support, optimization, and strategic guidance to ensure your automation evolves with your business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 1: Discovery -->
+            <section class="step-detail" id="step-discovery">
+                <div class="container">
+                    <div class="step-detail__content">
+                        <div class="step-detail__header">
+                            <div class="step-badge">
+                                <span class="badge-number">Step 1</span>
+                                <span class="badge-text">Discovery & Deep Dive</span>
+                            </div>
+                            <h2 class="step-detail__title">Understanding Your Business Inside and Out</h2>
+                            <p class="step-detail__subtitle">
+                                Before we recommend any solutions, we need to truly understand your business, your challenges, and your goals. Our discovery process is thorough, collaborative, and designed to uncover opportunities you might not have considered.
+                            </p>
+                        </div>
+                        
+                        <div class="step-detail__body">
+                            <div class="step-activities">
+                                <h3 class="activities-title">What We Do:</h3>
+                                <div class="activities-grid">
+                                    <div class="activity-card">
+                                        <i class="fas fa-users"></i>
+                                        <h4>Stakeholder Interviews</h4>
+                                        <p>One-on-one conversations with key team members to understand pain points and opportunities from multiple perspectives.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-sitemap"></i>
+                                        <h4>Process Mapping</h4>
+                                        <p>Detailed documentation of your current workflows, identifying bottlenecks, inefficiencies, and integration opportunities.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-tools"></i>
+                                        <h4>Technology Audit</h4>
+                                        <p>Comprehensive review of your existing tools, platforms, and data sources to understand your technical landscape.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-bullseye"></i>
+                                        <h4>Goal Alignment</h4>
+                                        <p>Clear definition of success metrics and business objectives that will guide our automation strategy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="step-deliverables">
+                                <h3 class="deliverables-title">Your Deliverables:</h3>
+                                <ul class="deliverables-list">
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-file-alt"></i>
+                                        <span><strong>Current State Analysis:</strong> Comprehensive documentation of your existing processes and systems</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        <span><strong>Pain Point Assessment:</strong> Detailed analysis of operational challenges and their business impact</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span><strong>Opportunity Matrix:</strong> Prioritized list of automation opportunities with potential ROI estimates</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-compass"></i>
+                                        <span><strong>Strategic Recommendations:</strong> Initial high-level recommendations for next steps</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 2: Strategic Design -->
+            <section class="step-detail step-detail--alternate" id="step-design">
+                <div class="container">
+                    <div class="step-detail__content">
+                        <div class="step-detail__header">
+                            <div class="step-badge">
+                                <span class="badge-number">Step 2</span>
+                                <span class="badge-text">Strategic Design</span>
+                            </div>
+                            <h2 class="step-detail__title">Crafting Your Automation Blueprint</h2>
+                            <p class="step-detail__subtitle">
+                                With a deep understanding of your business, we design a comprehensive automation strategy that aligns perfectly with your goals and ensures maximum impact with minimal risk.
+                            </p>
+                        </div>
+                        
+                        <div class="step-detail__body">
+                            <div class="step-activities">
+                                <h3 class="activities-title">What We Do:</h3>
+                                <div class="activities-grid">
+                                    <div class="activity-card">
+                                        <i class="fas fa-route"></i>
+                                        <h4>Solution Architecture</h4>
+                                        <p>Design the technical architecture and integration patterns that will power your automated workflows.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <h4>Implementation Roadmap</h4>
+                                        <p>Create a phased implementation plan with clear milestones, timelines, and resource requirements.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <h4>Risk Assessment</h4>
+                                        <p>Identify potential challenges and develop mitigation strategies to ensure smooth implementation.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-chart-pie"></i>
+                                        <h4>ROI Modeling</h4>
+                                        <p>Detailed financial analysis showing expected costs, savings, and return on investment timelines.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="step-deliverables">
+                                <h3 class="deliverables-title">Your Deliverables:</h3>
+                                <ul class="deliverables-list">
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-project-diagram"></i>
+                                        <span><strong>Technical Blueprint:</strong> Detailed system architecture and integration specifications</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-road"></i>
+                                        <span><strong>Implementation Roadmap:</strong> Phase-by-phase plan with timelines and deliverables</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-calculator"></i>
+                                        <span><strong>ROI Analysis:</strong> Comprehensive financial impact assessment and payback calculations</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-clipboard-check"></i>
+                                        <span><strong>Success Metrics:</strong> Clear KPIs and measurement criteria for tracking progress</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 3: Implementation -->
+            <section class="step-detail" id="step-implementation">
+                <div class="container">
+                    <div class="step-detail__content">
+                        <div class="step-detail__header">
+                            <div class="step-badge">
+                                <span class="badge-number">Step 3</span>
+                                <span class="badge-text">Precision Implementation</span>
+                            </div>
+                            <h2 class="step-detail__title">Building Your Automation Solutions</h2>
+                            <p class="step-detail__subtitle">
+                                This is where strategy becomes reality. Our implementation process is methodical, transparent, and designed to minimize disruption while maximizing quality and reliability.
+                            </p>
+                        </div>
+                        
+                        <div class="step-detail__body">
+                            <div class="step-activities">
+                                <h3 class="activities-title">What We Do:</h3>
+                                <div class="activities-grid">
+                                    <div class="activity-card">
+                                        <i class="fas fa-cogs"></i>
+                                        <h4>Agile Development</h4>
+                                        <p>Build your automation solutions using iterative development cycles with regular check-ins and feedback.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-vial"></i>
+                                        <h4>Rigorous Testing</h4>
+                                        <p>Comprehensive testing in a controlled environment before any changes affect your live operations.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <h4>Team Training</h4>
+                                        <p>Hands-on training for your team to ensure they can confidently use and maintain the new systems.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-rocket"></i>
+                                        <h4>Phased Deployment</h4>
+                                        <p>Careful, staged rollout of automation features to minimize risk and ensure smooth adoption.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="step-deliverables">
+                                <h3 class="deliverables-title">Your Deliverables:</h3>
+                                <ul class="deliverables-list">
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-play-circle"></i>
+                                        <span><strong>Live Automation Systems:</strong> Fully functional, tested automation workflows integrated with your existing tools</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-book"></i>
+                                        <span><strong>Comprehensive Documentation:</strong> User guides, technical documentation, and process manuals</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-user-graduate"></i>
+                                        <span><strong>Trained Team:</strong> Your staff fully trained on new systems and processes</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-life-ring"></i>
+                                        <span><strong>Support Framework:</strong> Clear escalation paths and support procedures for ongoing maintenance</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 4: Partnership -->
+            <section class="step-detail step-detail--alternate" id="step-partnership">
+                <div class="container">
+                    <div class="step-detail__content">
+                        <div class="step-detail__header">
+                            <div class="step-badge">
+                                <span class="badge-number">Step 4</span>
+                                <span class="badge-text">Partnership & Evolution</span>
+                            </div>
+                            <h2 class="step-detail__title">Ensuring Long-term Success</h2>
+                            <p class="step-detail__subtitle">
+                                Implementation is just the beginning. We partner with you for the long haul, continuously optimizing your systems and helping you evolve as your business grows.
+                            </p>
+                        </div>
+                        
+                        <div class="step-detail__body">
+                            <div class="step-activities">
+                                <h3 class="activities-title">What We Do:</h3>
+                                <div class="activities-grid">
+                                    <div class="activity-card">
+                                        <i class="fas fa-chart-line"></i>
+                                        <h4>Performance Monitoring</h4>
+                                        <p>Continuous tracking of system performance and business impact with regular optimization recommendations.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-sync-alt"></i>
+                                        <h4>System Updates</h4>
+                                        <p>Regular maintenance, security updates, and feature enhancements to keep your automation current.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                        <h4>Scalability Planning</h4>
+                                        <p>Strategic guidance for expanding automation as your business grows and requirements evolve.</p>
+                                    </div>
+                                    
+                                    <div class="activity-card">
+                                        <i class="fas fa-headset"></i>
+                                        <h4>Ongoing Support</h4>
+                                        <p>Responsive technical support and strategic consultation whenever you need assistance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="step-deliverables">
+                                <h3 class="deliverables-title">Your Deliverables:</h3>
+                                <ul class="deliverables-list">
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span><strong>Performance Reports:</strong> Regular analytics and insights on automation effectiveness and ROI</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-wrench"></i>
+                                        <span><strong>Optimization Recommendations:</strong> Continuous improvement suggestions based on usage patterns and business changes</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-map"></i>
+                                        <span><strong>Evolution Roadmap:</strong> Strategic plan for expanding and enhancing your automation capabilities</span>
+                                    </li>
+                                    <li class="deliverable-item">
+                                        <i class="fas fa-handshake"></i>
+                                        <span><strong>Trusted Partnership:</strong> Ongoing relationship with automation experts who understand your business</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <!-- CTA Section -->
+            <section class="approach-cta">
+                <div class="container">
+                    <div class="approach-cta__content">
+                        <h2 class="approach-cta__title">Ready to Start Your Transformation?</h2>
+                        <p class="approach-cta__description">
+                            Experience our proven methodology firsthand. Book a complimentary strategy session to see how our 4-step approach can transform your business operations.
+                        </p>
+                        <div class="approach-cta__actions">
+                            <a href="contact.html" class="btn btn--primary btn--large">Book Your Strategy Session</a>
                             <a href="solutions.html" class="btn btn--secondary btn--large">Explore Our Solutions</a>
                         </div>
                     </div>
-                    <div class="hero__visual">
-                        <div class="hero__animation">
-                            <div class="floating-elements">
-                                <div class="element element--1"></div>
-                                <div class="element element--2"></div>
-                                <div class="element element--3"></div>
-                                <div class="element element--4"></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
+            </section>
         </section>
+        <section id="about" class="page">
+            <!-- About Hero Section -->
+            <section class="about-hero">
+                <div class="container">
+                    <div class="about-hero__content">
+                        <h1 class="about-hero__title">
+                            Transforming Business Operations,
+                            <span class="about-hero__title-accent">One Automation at a Time</span>
+                        </h1>
+                        <p class="about-hero__subtitle">
+                            Founded on the belief that every business deserves to operate at its highest potential, O2mations was created to bridge the gap between ambitious growth goals and operational limitations.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Problem We Solve Section -->
-        <section class="problems">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">The Challenges Holding Your Business Back</h2>
-                    <p class="section-subtitle">
-                        We understand the operational bottlenecks that prevent ambitious businesses from reaching their full potential.
-                    </p>
-                </div>
-                
-                <div class="problems__grid">
-                    <div class="problem-card">
-                        <div class="problem-card__icon">
-                            <i class="fas fa-sync-alt"></i>
-                        </div>
-                        <h3 class="problem-card__title">Repetitive Workflows</h3>
-                        <p class="problem-card__description">
-                            Your team spends valuable hours on manual, repetitive tasks that could be automated, preventing them from focusing on strategic, high-value work that drives growth.
-                        </p>
-                    </div>
-                    
-                    <div class="problem-card">
-                        <div class="problem-card__icon">
-                            <i class="fas fa-puzzle-piece"></i>
-                        </div>
-                        <h3 class="problem-card__title">Disconnected Systems</h3>
-                        <p class="problem-card__description">
-                            Data silos between your tools create inefficiencies, errors, and missed opportunities. Your systems work against each other instead of together.
-                        </p>
-                    </div>
-                    
-                    <div class="problem-card">
-                        <div class="problem-card__icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3 class="problem-card__title">Growth Plateaus</h3>
-                        <p class="problem-card__description">
-                            Manual processes that worked at smaller scale now limit your growth. You need systems that scale with your ambitions, not against them.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Our Philosophy Section -->
-        <section class="philosophy">
-            <div class="container">
-                <div class="philosophy__content">
-                    <div class="philosophy__text">
-                        <h2 class="philosophy__title">Human-Centric Automation</h2>
-                        <p class="philosophy__description">
-                            We believe automation should amplify human potential, not replace it. Our approach focuses on eliminating the mundane so your team can concentrate on what they do best: innovating, strategizing, and building meaningful relationships.
-                        </p>
-                        <div class="philosophy__quote">
-                            <blockquote>
-                                "Technology is best when it brings people together and frees them to focus on what truly matters."
-                            </blockquote>
-                            <cite>— O2mations Philosophy</cite>
-                        </div>
-                    </div>
-                    <div class="philosophy__visual">
-                        <div class="philosophy__graphic">
-                            <div class="connection-lines">
-                                <div class="line line--1"></div>
-                                <div class="line line--2"></div>
-                                <div class="line line--3"></div>
+            <!-- Our Vision Section -->
+            <section class="vision-section">
+                <div class="container">
+                    <div class="vision-content">
+                        <div class="vision-text">
+                            <h2 class="vision-title">Our Vision: A World Where Technology Amplifies Human Potential</h2>
+                            <p class="vision-description">
+                                In 2025, two visionary entrepreneurs, Syed Umar and Omar Gamal, recognized a critical gap in how businesses approached automation. While technology had advanced dramatically, most companies were still trapped by manual processes, disconnected systems, and operational bottlenecks that limited their growth.
+                            </p>
+                            <p class="vision-description">
+                                They founded O2mations not just as another automation consultancy, but as a catalyst for business transformation. Our approach is fundamentally different: we don't replace human intelligence—we amplify it. We don't implement technology for technology's sake—we solve real business challenges.
+                            </p>
+                            
+                            <div class="vision-principles">
+                                <h3 class="principles-title">Our Core Principles</h3>
+                                <div class="principles-grid">
+                                    <div class="principle-item">
+                                        <i class="fas fa-heart"></i>
+                                        <h4>Human-Centric Design</h4>
+                                        <p>Every solution we create puts people first, ensuring technology enhances rather than replaces human capabilities.</p>
+                                    </div>
+                                    
+                                    <div class="principle-item">
+                                        <i class="fas fa-chart-line"></i>
+                                        <h4>Outcome-Focused Approach</h4>
+                                        <p>We measure success by business results, not technical complexity. Every automation must deliver measurable value.</p>
+                                    </div>
+                                    
+                                    <div class="principle-item">
+                                        <i class="fas fa-seedling"></i>
+                                        <h4>Sustainable Growth</h4>
+                                        <p>Our solutions are built to scale with your business, adapting and evolving as your needs change.</p>
+                                    </div>
+                                    
+                                    <div class="principle-item">
+                                        <i class="fas fa-handshake"></i>
+                                        <h4>Partnership Mindset</h4>
+                                        <p>We don't just deliver projects—we build long-term relationships based on trust, transparency, and shared success.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="nodes">
-                                <div class="node node--human"></div>
-                                <div class="node node--tech"></div>
-                                <div class="node node--growth"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Solutions Overview Section -->
-        <section class="solutions-preview">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Intelligent Solutions for a Smarter Business</h2>
-                    <p class="section-subtitle">
-                        Our comprehensive approach addresses every aspect of business automation, from workflow optimization to strategic transformation.
-                    </p>
-                </div>
-                
-                <div class="solutions__grid">
-                    <div class="solution-card">
-                        <div class="solution-card__header">
-                            <div class="solution-card__icon">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <h3 class="solution-card__title">Workflow & Process Automation</h3>
-                        </div>
-                        <p class="solution-card__description">
-                            Streamline your operations with intelligent workflows that eliminate manual bottlenecks and reduce human error.
-                        </p>
-                        <ul class="solution-card__benefits">
-                            <li>Eliminate manual data entry</li>
-                            <li>Reduce processing time by 70%</li>
-                            <li>Minimize human error</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="solution-card">
-                        <div class="solution-card__header">
-                            <div class="solution-card__icon">
-                                <i class="fas fa-project-diagram"></i>
-                            </div>
-                            <h3 class="solution-card__title">Platform & Data Integration</h3>
-                        </div>
-                        <p class="solution-card__description">
-                            Connect your tools and create a unified data ecosystem that provides real-time insights across your entire business.
-                        </p>
-                        <ul class="solution-card__benefits">
-                            <li>Create single source of truth</li>
-                            <li>Real-time data synchronization</li>
-                            <li>Unified business intelligence</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="solution-card">
-                        <div class="solution-card__header">
-                            <div class="solution-card__icon">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <h3 class="solution-card__title">Custom Automation Strategy</h3>
-                        </div>
-                        <p class="solution-card__description">
-                            Develop a comprehensive automation roadmap aligned with your business goals and growth trajectory.
-                        </p>
-                        <ul class="solution-card__benefits">
-                            <li>Strategic automation planning</li>
-                            <li>ROI-focused implementation</li>
-                            <li>Scalable solution architecture</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="solutions-preview__cta">
-                    <a href="solutions.html" class="btn btn--primary btn--large">Explore All Solutions</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Founders Intro Section -->
-        <section class="founders-intro">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Meet the Visionaries Behind O2mations</h2>
-                    <p class="section-subtitle">
-                        Founded by two passionate innovators with a shared vision for transforming how businesses operate.
-                    </p>
-                </div>
-                
-                <div class="founders__content">
-                    <div class="founders__text">
-                        <h3 class="founders__title">Driven by Innovation, Focused on Results</h3>
-                        <p class="founders__description">
-                            Syed Umar and Omar Gamal founded O2mations with a simple yet powerful belief: every business deserves to operate at its highest potential. Together, they bring a unique combination of strategic thinking, technical expertise, and human-centered design to create automation solutions that truly transform operations.
-                        </p>
-                        <div class="founders__stats">
-                            <div class="stat">
-                                <span class="stat__number">100+</span>
-                                <span class="stat__label">Processes Optimized</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat__number">50+</span>
-                                <span class="stat__label">Businesses Transformed</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat__number">85%</span>
-                                <span class="stat__label">Average Efficiency Gain</span>
-                            </div>
-                        </div>
-                        <a href="about.html" class="btn btn--secondary">Learn More About Our Story</a>
-                    </div>
-                    
-                    <div class="founders__profiles">
-                        <div class="founder-profile">
-                            <div class="founder-profile__image">
-                                <div class="placeholder-avatar" data-initials="SU"></div>
-                            </div>
-                            <h4 class="founder-profile__name">Syed Umar</h4>
-                            <p class="founder-profile__title">Co-Founder & Strategic Director</p>
                         </div>
                         
-                        <div class="founder-profile">
-                            <div class="founder-profile__image">
-                                <div class="placeholder-avatar" data-initials="OG"></div>
+                        <div class="vision-visual">
+                            <div class="vision-graphic">
+                                <div class="orbit-container">
+                                    <div class="central-concept">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span>Innovation</span>
+                                    </div>
+                                    
+                                    <div class="orbiting-element" data-orbit="1">
+                                        <i class="fas fa-users"></i>
+                                        <span>People</span>
+                                    </div>
+                                    
+                                    <div class="orbiting-element" data-orbit="2">
+                                        <i class="fas fa-cogs"></i>
+                                        <span>Process</span>
+                                    </div>
+                                    
+                                    <div class="orbiting-element" data-orbit="3">
+                                        <i class="fas fa-rocket"></i>
+                                        <span>Growth</span>
+                                    </div>
+                                    
+                                    <div class="orbiting-element" data-orbit="4">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Trust</span>
+                                    </div>
+                                </div>
                             </div>
-                            <h4 class="founder-profile__name">Omar Gamal</h4>
-                            <p class="founder-profile__title">Co-Founder & Technical Director</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta__content">
-                    <h2 class="cta__title">Ready to Transform Your Business Operations?</h2>
-                    <p class="cta__description">
-                        Book a complimentary strategy session and discover how O2mations can help you scale efficiently and effortlessly.
-                    </p>
-                    <a href="contact.html" class="btn btn--primary btn--large">Book Your Strategy Session</a>
+            <!-- Founders Section -->
+            <section class="founders-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Meet the Founders</h2>
+                        <p class="section-subtitle">
+                            Two passionate innovators with a shared vision for transforming how businesses operate in the digital age.
+                        </p>
+                    </div>
+                    
+                    <div class="founders-grid">
+                        <div class="founder-card">
+                            <div class="founder-image">
+                                <div class="placeholder-avatar large" data-initials="SU"></div>
+                            </div>
+                            <div class="founder-info">
+                                <h3 class="founder-name">Syed Umar</h3>
+                                <p class="founder-title">Co-Founder & Strategic Director</p>
+                                <p class="founder-bio">
+                                    Syed brings a unique blend of strategic thinking and operational excellence to O2mations. With a background in helping businesses scale efficiently, he has witnessed firsthand how the right automation strategy can transform an organization's trajectory. His approach focuses on aligning technology initiatives with business goals, ensuring every automation project delivers tangible ROI.
+                                </p>
+                                <p class="founder-bio">
+                                    Syed's passion lies in identifying the hidden inefficiencies that hold businesses back and crafting elegant solutions that unlock exponential growth. He believes that the best automation is invisible to end users—it simply makes everything work better.
+                                </p>
+                                
+                                <div class="founder-expertise">
+                                    <h4>Key Expertise:</h4>
+                                    <ul class="expertise-list">
+                                        <li>Strategic Business Planning</li>
+                                        <li>Process Optimization</li>
+                                        <li>Change Management</li>
+                                        <li>ROI Analysis & Metrics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="founder-card">
+                            <div class="founder-image">
+                                <div class="placeholder-avatar large" data-initials="OG"></div>
+                            </div>
+                            <div class="founder-info">
+                                <h3 class="founder-name">Omar Gamal</h3>
+                                <p class="founder-title">Co-Founder & Technical Director</p>
+                                <p class="founder-bio">
+                                    Omar is the technical visionary behind O2mations' innovative automation solutions. His expertise in modern technology stacks and integration platforms enables him to design systems that are not just functional, but elegant and scalable. He has a rare ability to translate complex technical concepts into business language, making him the perfect bridge between strategy and execution.
+                                </p>
+                                <p class="founder-bio">
+                                    What sets Omar apart is his commitment to creating solutions that businesses can actually use and maintain. He believes in building automation that empowers teams rather than overwhelming them, focusing on user-friendly interfaces and reliable, maintainable systems.
+                                </p>
+                                
+                                <div class="founder-expertise">
+                                    <h4>Key Expertise:</h4>
+                                    <ul class="expertise-list">
+                                        <li>System Integration</li>
+                                        <li>Automation Architecture</li>
+                                        <li>Platform Development</li>
+                                        <li>Technical Leadership</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="founders-story">
+                        <div class="story-content">
+                            <h3 class="story-title">The O2mations Story</h3>
+                            <p class="story-text">
+                                Syed and Omar first collaborated on a project that would become the blueprint for O2mations' approach. A growing e-commerce company was drowning in manual processes—order processing, inventory management, customer service, and financial reporting were all handled by different people using different tools, with information getting lost or duplicated at every step.
+                            </p>
+                            <p class="story-text">
+                                Rather than simply automating existing processes, Syed and Omar reimagined the entire operation. They created an integrated system where data flowed seamlessly between platforms, where repetitive tasks happened automatically, and where the team could focus on strategic initiatives instead of administrative overhead.
+                            </p>
+                            <p class="story-text">
+                                The results were transformative: 75% reduction in processing time, 90% fewer errors, and the ability to scale revenue by 3x without proportionally increasing staff. But more importantly, the team was energized and engaged in ways they hadn't experienced before.
+                            </p>
+                            <p class="story-text">
+                                That project became the inspiration for O2mations. Syed and Omar realized that most businesses face similar challenges, and that the right combination of strategic thinking and technical execution could unlock incredible potential. They founded O2mations to bring this transformative approach to ambitious businesses everywhere.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- Values Section -->
+            <section class="values-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">What Drives Us</h2>
+                        <p class="section-subtitle">
+                            Our values aren't just words on a wall—they guide every decision we make and every solution we deliver.
+                        </p>
+                    </div>
+                    
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-compass"></i>
+                            </div>
+                            <h3 class="value-title">Purpose-Driven Innovation</h3>
+                            <p class="value-description">
+                                We don't innovate for the sake of innovation. Every solution we create serves a clear business purpose and delivers measurable value to our clients.
+                            </p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3 class="value-title">Radical Transparency</h3>
+                            <p class="value-description">
+                                We believe in complete openness with our clients. You'll always know exactly what we're doing, why we're doing it, and what results you can expect.
+                            </p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="value-title">Continuous Learning</h3>
+                            <p class="value-description">
+                                Technology evolves rapidly, and so do we. We're committed to staying at the forefront of automation capabilities to serve our clients better.
+                            </p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3 class="value-title">Excellence in Execution</h3>
+                            <p class="value-description">
+                                We set high standards for ourselves and deliver work that we're proud to put our name on. Quality is never negotiable.
+                            </p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3 class="value-title">Collaborative Partnership</h3>
+                            <p class="value-description">
+                                Your success is our success. We work alongside your team as trusted partners, not just external consultants.
+                            </p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3 class="value-title">Ethical Technology</h3>
+                            <p class="value-description">
+                                We believe technology should serve humanity. Our solutions respect privacy, promote fairness, and contribute to positive business outcomes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us Section -->
+            <section class="why-choose-section">
+                <div class="container">
+                    <div class="why-choose-content">
+                        <div class="why-choose-text">
+                            <h2 class="why-choose-title">Why Choose O2mations?</h2>
+                            <p class="why-choose-description">
+                                In a world full of automation consultancies, what makes O2mations different? It's our unique combination of strategic vision, technical expertise, and genuine commitment to your success.
+                            </p>
+                            
+                            <div class="differentiators">
+                                <div class="differentiator-item">
+                                    <div class="diff-number">01</div>
+                                    <div class="diff-content">
+                                        <h3>Fresh Perspective, Proven Results</h3>
+                                        <p>As a newly founded company, we bring innovative thinking without the baggage of "that's how we've always done it." Yet our founders' proven track record ensures you get expertise you can trust.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="differentiator-item">
+                                    <div class="diff-number">02</div>
+                                    <div class="diff-content">
+                                        <h3>Agile and Responsive</h3>
+                                        <p>Without layers of bureaucracy, we can move quickly, adapt to your needs, and implement solutions faster than larger, more rigid consultancies.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="differentiator-item">
+                                    <div class="diff-number">03</div>
+                                    <div class="diff-content">
+                                        <h3>Client-Focused Culture</h3>
+                                        <p>Every client matters to us. You'll work directly with our founders and senior team members, not junior consultants learning on your time.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="differentiator-item">
+                                    <div class="diff-number">04</div>
+                                    <div class="diff-content">
+                                        <h3>Modern Technology Stack</h3>
+                                        <p>We leverage the latest platforms and tools, unencumbered by legacy systems or vendor relationships that might limit our recommendations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="why-choose-stats">
+                            <h3 class="stats-title">Our Impact</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <span class="stat-number">100+</span>
+                                    <span class="stat-label">Processes Optimized</span>
+                                </div>
+                                
+                                <div class="stat-item">
+                                    <span class="stat-number">50+</span>
+                                    <span class="stat-label">Businesses Transformed</span>
+                                </div>
+                                
+                                <div class="stat-item">
+                                    <span class="stat-number">85%</span>
+                                    <span class="stat-label">Average Efficiency Gain</span>
+                                </div>
+                                
+                                <div class="stat-item">
+                                    <span class="stat-number">3x</span>
+                                    <span class="stat-label">Average Revenue Growth</span>
+                                </div>
+                                
+                                <div class="stat-item">
+                                    <span class="stat-number">95%</span>
+                                    <span class="stat-label">Client Satisfaction Rate</span>
+                                </div>
+                                
+                                <div class="stat-item">
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">System Uptime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="about-cta">
+                <div class="container">
+                    <div class="about-cta__content">
+                        <h2 class="about-cta__title">Ready to Transform Your Business?</h2>
+                        <p class="about-cta__description">
+                            Let's discuss how O2mations can help you unlock your business's full potential through intelligent automation.
+                        </p>
+                        <div class="about-cta__actions">
+                            <a href="contact.html" class="btn btn--primary btn--large">Book Your Strategy Session</a>
+                            <a href="solutions.html" class="btn btn--secondary btn--large">Explore Our Solutions</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="contact" class="page">
+            <!-- Contact Hero Section -->
+            <section class="contact-hero">
+                <div class="container">
+                    <div class="contact-hero__content">
+                        <h1 class="contact-hero__title">
+                            Ready to Build a More 
+                            <span class="contact-hero__title-accent">Efficient Future?</span>
+                        </h1>
+                        <p class="contact-hero__subtitle">
+                            Book a complimentary strategy session with our automation experts. We'll analyze your current operations and identify opportunities for immediate improvements and long-term transformation.
+                        </p>
+                        
+                        <div class="contact-hero__benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-clock"></i>
+                                <span>60-minute deep-dive session</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Custom automation roadmap</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-gift"></i>
+                                <span>Completely complimentary</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section class="contact-form-section">
+                <div class="container">
+                    <div class="contact-content">
+                        <div class="contact-form-wrapper">
+                            <div class="form-header">
+                                <h2 class="form-title">Request Your Strategy Session</h2>
+                                <p class="form-description">
+                                    Tell us about your business goals, and we'll show you how automation can help you achieve them faster and more efficiently.
+                                </p>
+                            </div>
+                            
+                            <form class="contact-form" id="strategy-form" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fullName" class="form-label">Full Name *</label>
+                                        <input 
+                                            type="text" 
+                                            id="fullName" 
+                                            name="fullName" 
+                                            class="form-input" 
+                                            required 
+                                            placeholder="Enter your full name"
+                                            autocomplete="name"
+                                        >
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="companyName" class="form-label">Company Name *</label>
+                                        <input 
+                                            type="text" 
+                                            id="companyName" 
+                                            name="companyName" 
+                                            class="form-input" 
+                                            required 
+                                            placeholder="Enter your company name"
+                                            autocomplete="organization"
+                                        >
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="workEmail" class="form-label">Work Email *</label>
+                                        <input 
+                                            type="email" 
+                                            id="workEmail" 
+                                            name="workEmail" 
+                                            class="form-input" 
+                                            required 
+                                            placeholder="you@yourcompany.com"
+                                            autocomplete="email"
+                                        >
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                                        <input 
+                                            type="tel" 
+                                            id="phoneNumber" 
+                                            name="phoneNumber" 
+                                            class="form-input" 
+                                            placeholder="+1 (555) 123-4567"
+                                            autocomplete="tel"
+                                        >
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="companySize" class="form-label">Company Size</label>
+                                        <select id="companySize" name="companySize" class="form-select">
+                                            <option value="">Select company size</option>
+                                            <option value="1-10">1-10 employees</option>
+                                            <option value="11-50">11-50 employees</option>
+                                            <option value="51-200">51-200 employees</option>
+                                            <option value="201-500">201-500 employees</option>
+                                            <option value="500+">500+ employees</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="industry" class="form-label">Industry</label>
+                                        <select id="industry" name="industry" class="form-select">
+                                            <option value="">Select your industry</option>
+                                            <option value="technology">Technology</option>
+                                            <option value="healthcare">Healthcare</option>
+                                            <option value="finance">Finance & Banking</option>
+                                            <option value="retail">Retail & E-commerce</option>
+                                            <option value="manufacturing">Manufacturing</option>
+                                            <option value="professional-services">Professional Services</option>
+                                            <option value="real-estate">Real Estate</option>
+                                            <option value="education">Education</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="businessGoal" class="form-label">What is your primary business goal? *</label>
+                                    <textarea 
+                                        id="businessGoal" 
+                                        name="businessGoal" 
+                                        class="form-textarea" 
+                                        rows="4" 
+                                        required 
+                                        placeholder="Describe your main business objective and current challenges. For example: 'We want to scale our customer onboarding process without hiring more staff' or 'Our sales team spends too much time on administrative tasks instead of selling.'"
+                                    ></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="currentChallenges" class="form-label">Current Process Challenges</label>
+                                    <textarea 
+                                        id="currentChallenges" 
+                                        name="currentChallenges" 
+                                        class="form-textarea" 
+                                        rows="3" 
+                                        placeholder="Optional: Tell us about specific processes that are slowing you down or causing bottlenecks."
+                                    ></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="timeframe" class="form-label">Implementation Timeframe</label>
+                                    <select id="timeframe" name="timeframe" class="form-select">
+                                        <option value="">When would you like to start?</option>
+                                        <option value="immediately">Immediately (within 2 weeks)</option>
+                                        <option value="1-month">Within 1 month</option>
+                                        <option value="1-3-months">1-3 months</option>
+                                        <option value="3-6-months">3-6 months</option>
+                                        <option value="exploring">Just exploring options</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="newsletter" value="yes" class="checkbox-input">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="checkbox-text">I'd like to receive occasional insights about business automation trends and best practices</span>
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="form-submit btn btn--primary btn--large">
+                                    <span class="submit-text">Request My Strategy Session</span>
+                                    <i class="fas fa-arrow-right submit-icon"></i>
+                                </button>
+                                
+                                <p class="form-privacy">
+                                    By submitting this form, you agree to our privacy policy. We'll never share your information and you can unsubscribe at any time.
+                                </p>
+                            </form>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <h3 class="contact-card__title">What to Expect</h3>
+                                <div class="expectation-item">
+                                    <div class="expectation-step">1</div>
+                                    <div class="expectation-content">
+                                        <h4>Initial Assessment</h4>
+                                        <p>We'll analyze your current processes and identify quick wins and long-term opportunities.</p>
+                                    </div>
+                                </div>
+                                <div class="expectation-item">
+                                    <div class="expectation-step">2</div>
+                                    <div class="expectation-content">
+                                        <h4>Custom Recommendations</h4>
+                                        <p>Receive a tailored automation roadmap with prioritized implementation steps.</p>
+                                    </div>
+                                </div>
+                                <div class="expectation-item">
+                                    <div class="expectation-step">3</div>
+                                    <div class="expectation-content">
+                                        <h4>Next Steps Plan</h4>
+                                        <p>Walk away with clear action items and a timeline for transformation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <h3 class="contact-card__title">Alternative Contact</h3>
+                                <div class="direct-contact">
+                                    <div class="contact-method">
+                                        <i class="fas fa-envelope"></i>
+                                        <div>
+                                            <h4>Email Us Directly</h4>
+                                            <a href="mailto:strategy@o2mations.com" class="contact-link">strategy@o2mations.com</a>
+                                            <p>For immediate questions or to schedule directly</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-method">
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <h4>Response Time</h4>
+                                            <p>We typically respond within <strong>4 hours</strong> during business days</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-method">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <div>
+                                            <h4>Privacy Guaranteed</h4>
+                                            <p>Your information is completely confidential and never shared with third parties</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card testimonial-card">
+                                <div class="testimonial-content">
+                                    <blockquote>
+                                        "The strategy session with O2mations was incredibly valuable. They identified automation opportunities we hadn't even considered and provided a clear roadmap for implementation."
+                                    </blockquote>
+                                    <cite>
+                                        <strong>Sarah Chen</strong><br>
+                                        Operations Director, TechFlow Solutions
+                                    </cite>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="contact-faq">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Frequently Asked Questions</h2>
+                    </div>
+                    
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3 class="faq-question">How long is the strategy session?</h3>
+                            <p class="faq-answer">Our strategy sessions typically last 60 minutes. This gives us enough time to understand your business, analyze your processes, and provide meaningful recommendations.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">Is there really no cost for the session?</h3>
+                            <p class="faq-answer">Absolutely no cost. We believe in demonstrating value upfront. You'll receive actionable insights regardless of whether you decide to work with us.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">What if I'm not ready to implement right away?</h3>
+                            <p class="faq-answer">That's perfectly fine. We'll provide you with a roadmap you can implement when you're ready, and there's no pressure to move forward immediately.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">Do you work with small businesses?</h3>
+                            <p class="faq-answer">Yes, we work with businesses of all sizes. Our solutions are scalable and can be tailored to fit your current needs and budget.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">Can the session be conducted remotely?</h3>
+                            <p class="faq-answer">Absolutely. Most of our strategy sessions are conducted via video conference for convenience and efficiency.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">What should I prepare for the session?</h3>
+                            <p class="faq-answer">Just come with an open mind and be ready to discuss your current processes and challenges. We'll guide you through everything else.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
