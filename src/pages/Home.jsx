@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             {/* Hero Section */}
@@ -10,15 +13,14 @@ const Home = () => {
                     <div className="hero__content">
                         <div className="hero__text">
                             <h1 className="hero__title">
-                                The Future of Your Business is 
-                                <span className="hero__title-accent">Effortless</span>
+                                {t('hero_title')}
                             </h1>
                             <p className="hero__subtitle">
-                                Transform your operations with intelligent automation solutions designed specifically for ambitious businesses ready to scale without limits.
+                                {t('hero_subtitle')}
                             </p>
                             <div className="hero__actions">
-                                <Link to="/contact" className="btn btn--primary btn--large">Book a Strategy Session</Link>
-                                <Link to="/solutions" className="btn btn--secondary btn--large">Explore Our Solutions</Link>
+                                <Link to="/contact" className="btn btn--primary btn--large">{t('book_strategy_session')}</Link>
+                                <Link to="/solutions" className="btn btn--secondary btn--large">{t('explore_our_solutions')}</Link>
                             </div>
                         </div>
                         <div className="hero__visual">
@@ -39,9 +41,9 @@ const Home = () => {
             <section className="problems">
                 <div className="container">
                     <div className="section-header">
-                        <h2 className="section-title">The Challenges Holding Your Business Back</h2>
+                        <h2 className="section-title">{t('problems_section_title')}</h2>
                         <p className="section-subtitle">
-                            We understand the operational bottlenecks that prevent ambitious businesses from reaching their full potential.
+                            {t('problems_section_subtitle')}
                         </p>
                     </div>
                     
@@ -50,9 +52,9 @@ const Home = () => {
                             <div className="problem-card__icon">
                                 <i className="fas fa-sync-alt"></i>
                             </div>
-                            <h3 className="problem-card__title">Repetitive Workflows</h3>
+                            <h3 className="problem-card__title">{t('problem_card1_title')}</h3>
                             <p className="problem-card__description">
-                                Your team spends valuable hours on manual, repetitive tasks that could be automated, preventing them from focusing on strategic, high-value work that drives growth.
+                                {t('problem_card1_description')}
                             </p>
                         </div>
                         
@@ -60,9 +62,9 @@ const Home = () => {
                             <div className="problem-card__icon">
                                 <i className="fas fa-puzzle-piece"></i>
                             </div>
-                            <h3 className="problem-card__title">Disconnected Systems</h3>
+                            <h3 className="problem-card__title">{t('problem_card2_title')}</h3>
                             <p className="problem-card__description">
-                                Data silos between your tools create inefficiencies, errors, and missed opportunities. Your systems work against each other instead of together.
+                                {t('problem_card2_description')}
                             </p>
                         </div>
                         
@@ -70,9 +72,9 @@ const Home = () => {
                             <div className="problem-card__icon">
                                 <i className="fas fa-chart-line"></i>
                             </div>
-                            <h3 className="problem-card__title">Growth Plateaus</h3>
+                            <h3 className="problem-card__title">{t('problem_card3_title')}</h3>
                             <p className="problem-card__description">
-                                Manual processes that worked at smaller scale now limit your growth. You need systems that scale with your ambitions, not against them.
+                                {t('problem_card3_description')}
                             </p>
                         </div>
                     </div>
@@ -84,15 +86,15 @@ const Home = () => {
                 <div className="container">
                     <div className="philosophy__content">
                         <div className="philosophy__text">
-                            <h2 className="philosophy__title">Human-Centric Automation</h2>
+                            <h2 className="philosophy__title">{t('philosophy_title')}</h2>
                             <p className="philosophy__description">
-                                We believe automation should amplify human potential, not replace it. Our approach focuses on eliminating the mundane so your team can concentrate on what they do best: innovating, strategizing, and building meaningful relationships.
+                                {t('philosophy_description')}
                             </p>
                             <div className="philosophy__quote">
                                 <blockquote>
-                                    "Technology is best when it brings people together and frees them to focus on what truly matters."
+                                    {t('philosophy_quote')}
                                 </blockquote>
-                                <cite>— O2mations Philosophy</cite>
+                                <cite>— {t('philosophy_cite')}</cite>
                             </div>
                         </div>
                         <div className="philosophy__visual">
@@ -117,9 +119,9 @@ const Home = () => {
             <section className="solutions-preview">
                 <div className="container">
                     <div className="section-header">
-                        <h2 className="section-title">Intelligent Solutions for a Smarter Business</h2>
+                        <h2 className="section-title">{t('solutions_preview_title')}</h2>
                         <p className="section-subtitle">
-                            Our comprehensive approach addresses every aspect of business automation, from workflow optimization to strategic transformation.
+                            {t('solutions_preview_subtitle')}
                         </p>
                     </div>
                     
@@ -129,15 +131,15 @@ const Home = () => {
                                 <div className="solution-card__icon">
                                     <i className="fas fa-cogs"></i>
                                 </div>
-                                <h3 className="solution-card__title">Workflow & Process Automation</h3>
+                                <h3 className="solution-card__title">{t('solution_card1_title')}</h3>
                             </div>
                             <p className="solution-card__description">
-                                Streamline your operations with intelligent workflows that eliminate manual bottlenecks and reduce human error.
+                                {t('solution_card1_description')}
                             </p>
                             <ul className="solution-card__benefits">
-                                <li>Eliminate manual data entry</li>
-                                <li>Reduce processing time by 70%</li>
-                                <li>Minimize human error</li>
+                                <li>{t('solution_card1_benefit1')}</li>
+                                <li>{t('solution_card1_benefit2')}</li>
+                                <li>{t('solution_card1_benefit3')}</li>
                             </ul>
                         </div>
                         
@@ -146,15 +148,15 @@ const Home = () => {
                                 <div className="solution-card__icon">
                                     <i className="fas fa-project-diagram"></i>
                                 </div>
-                                <h3 className="solution-card__title">Platform & Data Integration</h3>
+                                <h3 className="solution-card__title">{t('solution_card2_title')}</h3>
                             </div>
                             <p className="solution-card__description">
-                                Connect your tools and create a unified data ecosystem that provides real-time insights across your entire business.
+                                {t('solution_card2_description')}
                             </p>
                             <ul className="solution-card__benefits">
-                                <li>Create single source of truth</li>
-                                <li>Real-time data synchronization</li>
-                                <li>Unified business intelligence</li>
+                                <li>{t('solution_card2_benefit1')}</li>
+                                <li>{t('solution_card2_benefit2')}</li>
+                                <li>{t('solution_card2_benefit3')}</li>
                             </ul>
                         </div>
                         
@@ -163,21 +165,21 @@ const Home = () => {
                                 <div className="solution-card__icon">
                                     <i className="fas fa-lightbulb"></i>
                                 </div>
-                                <h3 className="solution-card__title">Custom Automation Strategy</h3>
+                                <h3 className="solution-card__title">{t('solution_card3_title')}</h3>
                             </div>
                             <p className="solution-card__description">
-                                Develop a comprehensive automation roadmap aligned with your business goals and growth trajectory.
+                                {t('solution_card3_description')}
                             </p>
                             <ul className="solution-card__benefits">
-                                <li>Strategic automation planning</li>
-                                <li>ROI-focused implementation</li>
-                                <li>Scalable solution architecture</li>
+                                <li>{t('solution_card3_benefit1')}</li>
+                                <li>{t('solution_card3_benefit2')}</li>
+                                <li>{t('solution_card3_benefit3')}</li>
                             </ul>
                         </div>
                     </div>
                     
                     <div className="solutions-preview__cta">
-                        <Link to="/solutions" className="btn btn--primary btn--large">Explore All Solutions</Link>
+                        <Link to="/solutions" className="btn btn--primary btn--large">{t('explore_all_solutions')}</Link>
                     </div>
                 </div>
             </section>
@@ -186,33 +188,33 @@ const Home = () => {
             <section className="founders-intro">
                 <div className="container">
                     <div className="section-header">
-                        <h2 className="section-title">Meet the Visionaries Behind O2mations</h2>
+                        <h2 className="section-title">{t('founders_intro_title')}</h2>
                         <p className="section-subtitle">
-                            Founded by two passionate innovators with a shared vision for transforming how businesses operate.
+                            {t('founders_intro_subtitle')}
                         </p>
                     </div>
                     
                     <div className="founders__content">
                         <div className="founders__text">
-                            <h3 className="founders__title">Driven by Innovation, Focused on Results</h3>
+                            <h3 className="founders__title">{t('founders_intro_heading')}</h3>
                             <p className="founders__description">
-                                Syed Umar and Omar Gamal founded O2mations with a simple yet powerful belief: every business deserves to operate at its highest potential. Together, they bring a unique combination of strategic thinking, technical expertise, and human-centered design to create automation solutions that truly transform operations.
+                                {t('founders_intro_description')}
                             </p>
                             <div className="founders__stats">
                                 <div className="stat">
                                     <span className="stat__number">100+</span>
-                                    <span className="stat__label">Processes Optimized</span>
+                                    <span className="stat__label">{t('stat1_label')}</span>
                                 </div>
                                 <div className="stat">
                                     <span className="stat__number">50+</span>
-                                    <span className="stat__label">Businesses Transformed</span>
+                                    <span className="stat__label">{t('stat2_label')}</span>
                                 </div>
                                 <div className="stat">
                                     <span className="stat__number">85%</span>
-                                    <span className="stat__label">Average Efficiency Gain</span>
+                                    <span className="stat__label">{t('stat3_label')}</span>
                                 </div>
                             </div>
-                            <Link to="/about" className="btn btn--secondary">Learn More About Our Story</Link>
+                            <Link to="/about" className="btn btn--secondary">{t('learn_more_about_our_story')}</Link>
                         </div>
                         
                         <div className="founders__profiles">
@@ -220,16 +222,16 @@ const Home = () => {
                                 <div className="founder-profile__image">
                                     <div className="placeholder-avatar" data-initials="SU"></div>
                                 </div>
-                                <h4 className="founder-profile__name">Syed Umar</h4>
-                                <p className="founder-profile__title">Co-Founder & Strategic Director</p>
+                                <h4 className="founder-profile__name">{t('founder1_name')}</h4>
+                                <p className="founder-profile__title">{t('founder1_title')}</p>
                             </div>
                             
                             <div className="founder-profile">
                                 <div className="founder-profile__image">
                                     <div className="placeholder-avatar" data-initials="OG"></div>
                                 </div>
-                                <h4 className="founder-profile__name">Omar Gamal</h4>
-                                <p className="founder-profile__title">Co-Founder & Technical Director</p>
+                                <h4 className="founder-profile__name">{t('founder2_name')}</h4>
+                                <p className="founder-profile__title">{t('founder2_title')}</p>
                             </div>
                         </div>
                     </div>
@@ -240,11 +242,11 @@ const Home = () => {
             <section className="cta-section">
                 <div className="container">
                     <div className="cta__content">
-                        <h2 className="cta__title">Ready to Transform Your Business Operations?</h2>
+                        <h2 className="cta__title">{t('cta_title')}</h2>
                         <p className="cta__description">
-                            Book a complimentary strategy session and discover how O2mations can help you scale efficiently and effortlessly.
+                            {t('cta_description')}
                         </p>
-                        <Link to="/contact" className="btn btn--primary btn--large">Book Your Strategy Session</Link>
+                        <Link to="/contact" className="btn btn--primary btn--large">{t('book_your_strategy_session')}</Link>
                     </div>
                 </div>
             </section>

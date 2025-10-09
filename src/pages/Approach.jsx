@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import '../../css/approach.css';
 
 const Approach = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             {/* Approach Hero Section */}
@@ -10,15 +13,14 @@ const Approach = () => {
                 <div className="container">
                     <div className="approach-hero__content">
                         <h1 className="approach-hero__title">
-                            Your Blueprint for 
-                            <span className="approach-hero__title-accent">Transformation</span>
+                            {t('approach_hero_title')}
                         </h1>
                         <p className="approach-hero__subtitle">
-                            Our proven 4-step methodology ensures successful automation implementation that delivers lasting results. Every engagement follows a clear, collaborative path designed to minimize risk and maximize value.
+                            {t('approach_hero_subtitle')}
                         </p>
                         <div className="approach-hero__highlight">
                             <i className="fas fa-shield-alt"></i>
-                            <span>Proven methodology used by 50+ successful transformations</span>
+                            <span>{t('approach_hero_highlight')}</span>
                         </div>
                     </div>
                 </div>
@@ -28,9 +30,9 @@ const Approach = () => {
             <section className="process-overview">
                 <div className="container">
                     <div className="section-header">
-                        <h2 className="section-title">A Structured Approach to Success</h2>
+                        <h2 className="section-title">{t('process_overview_title')}</h2>
                         <p className="section-subtitle">
-                            Our methodology is built on years of experience and refined through dozens of successful implementations. Each step builds upon the previous one, ensuring a solid foundation for lasting transformation.
+                            {t('process_overview_subtitle')}
                         </p>
                     </div>
                     
@@ -43,10 +45,10 @@ const Approach = () => {
                                 </div>
                             </div>
                             <div className="step-content">
-                                <h3 className="step-title">Discovery & Deep Dive</h3>
-                                <p className="step-duration">1-2 weeks</p>
+                                <h3 className="step-title">{t('timeline_step1_title')}</h3>
+                                <p className="step-duration">{t('timeline_step1_duration')}</p>
                                 <p className="step-description">
-                                    We start by understanding your business inside and out—your processes, challenges, goals, and unique requirements.
+                                    {t('timeline_step1_description')}
                                 </p>
                             </div>
                         </div>
@@ -61,10 +63,10 @@ const Approach = () => {
                                 </div>
                             </div>
                             <div className="step-content">
-                                <h3 className="step-title">Strategic Design</h3>
-                                <p className="step-duration">1-2 weeks</p>
+                                <h3 className="step-title">{t('timeline_step2_title')}</h3>
+                                <p className="step-duration">{t('timeline_step2_duration')}</p>
                                 <p className="step-description">
-                                    We create a comprehensive automation strategy with detailed blueprints, timelines, and success metrics.
+                                    {t('timeline_step2_description')}
                                 </p>
                             </div>
                         </div>
@@ -79,10 +81,10 @@ const Approach = () => {
                                 </div>
                             </div>
                             <div className="step-content">
-                                <h3 className="step-title">Precision Implementation</h3>
-                                <p className="step-duration">2-8 weeks</p>
+                                <h3 className="step-title">{t('timeline_step3_title')}</h3>
+                                <p className="step-duration">{t('timeline_step3_duration')}</p>
                                 <p className="step-description">
-                                    We build, test, and deploy your automation solutions with rigorous quality control and minimal disruption.
+                                    {t('timeline_step3_description')}
                                 </p>
                             </div>
                         </div>
@@ -97,10 +99,10 @@ const Approach = () => {
                                 </div>
                             </div>
                             <div className="step-content">
-                                <h3 className="step-title">Partnership & Evolution</h3>
-                                <p className="step-duration">Ongoing</p>
+                                <h3 className="step-title">{t('timeline_step4_title')}</h3>
+                                <p className="step-duration">{t('timeline_step4_duration')}</p>
                                 <p className="step-description">
-                                    We provide continuous support, optimization, and strategic guidance to ensure your automation evolves with your business.
+                                    {t('timeline_step4_description')}
                                 </p>
                             </div>
                         </div>
@@ -115,62 +117,62 @@ const Approach = () => {
                         <div className="step-detail__header">
                             <div className="step-badge">
                                 <span className="badge-number">Step 1</span>
-                                <span className="badge-text">Discovery & Deep Dive</span>
+                                <span className="badge-text">{t('timeline_step1_title')}</span>
                             </div>
-                            <h2 className="step-detail__title">Understanding Your Business Inside and Out</h2>
+                            <h2 className="step-detail__title">{t('step1_title')}</h2>
                             <p className="step-detail__subtitle">
-                                Before we recommend any solutions, we need to truly understand your business, your challenges, and your goals. Our discovery process is thorough, collaborative, and designed to uncover opportunities you might not have considered.
+                                {t('step1_subtitle')}
                             </p>
                         </div>
                         
                         <div className="step-detail__body">
                             <div className="step-activities">
-                                <h3 className="activities-title">What We Do:</h3>
+                                <h3 className="activities-title">{t('what_we_do')}</h3>
                                 <div className="activities-grid">
                                     <div className="activity-card">
                                         <i className="fas fa-users"></i>
-                                        <h4>Stakeholder Interviews</h4>
-                                        <p>One-on-one conversations with key team members to understand pain points and opportunities from multiple perspectives.</p>
+                                        <h4>{t('activity1_title')}</h4>
+                                        <p>{t('activity1_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-sitemap"></i>
-                                        <h4>Process Mapping</h4>
-                                        <p>Detailed documentation of your current workflows, identifying bottlenecks, inefficiencies, and integration opportunities.</p>
+                                        <h4>{t('activity2_title')}</h4>
+                                        <p>{t('activity2_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-tools"></i>
-                                        <h4>Technology Audit</h4>
-                                        <p>Comprehensive review of your existing tools, platforms, and data sources to understand your technical landscape.</p>
+                                        <h4>{t('activity3_title')}</h4>
+                                        <p>{t('activity3_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-bullseye"></i>
-                                        <h4>Goal Alignment</h4>
-                                        <p>Clear definition of success metrics and business objectives that will guide our automation strategy.</p>
+                                        <h4>{t('activity4_title')}</h4>
+                                        <p>{t('activity4_description')}</p>
                                     </div>
                                 </div>
                             </div>
                             
                             <div className="step-deliverables">
-                                <h3 className="deliverables-title">Your Deliverables:</h3>
+                                <h3 className="deliverables-title">{t('your_deliverables')}</h3>
                                 <ul className="deliverables-list">
                                     <li className="deliverable-item">
                                         <i className="fas fa-file-alt"></i>
-                                        <span><strong>Current State Analysis:</strong> Comprehensive documentation of your existing processes and systems</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable1') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-exclamation-triangle"></i>
-                                        <span><strong>Pain Point Assessment:</strong> Detailed analysis of operational challenges and their business impact</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable2') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-lightbulb"></i>
-                                        <span><strong>Opportunity Matrix:</strong> Prioritized list of automation opportunities with potential ROI estimates</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable3') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-compass"></i>
-                                        <span><strong>Strategic Recommendations:</strong> Initial high-level recommendations for next steps</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable4') }} />
                                     </li>
                                 </ul>
                             </div>
@@ -186,62 +188,62 @@ const Approach = () => {
                         <div className="step-detail__header">
                             <div className="step-badge">
                                 <span className="badge-number">Step 2</span>
-                                <span className="badge-text">Strategic Design</span>
+                                <span className="badge-text">{t('timeline_step2_title')}</span>
                             </div>
-                            <h2 className="step-detail__title">Crafting Your Automation Blueprint</h2>
+                            <h2 className="step-detail__title">{t('step2_title')}</h2>
                             <p className="step-detail__subtitle">
-                                With a deep understanding of your business, we design a comprehensive automation strategy that aligns perfectly with your goals and ensures maximum impact with minimal risk.
+                                {t('step2_subtitle')}
                             </p>
                         </div>
                         
                         <div className="step-detail__body">
                             <div className="step-activities">
-                                <h3 className="activities-title">What We Do:</h3>
+                                <h3 className="activities-title">{t('what_we_do')}</h3>
                                 <div className="activities-grid">
                                     <div className="activity-card">
                                         <i className="fas fa-route"></i>
-                                        <h4>Solution Architecture</h4>
-                                        <p>Design the technical architecture and integration patterns that will power your automated workflows.</p>
+                                        <h4>{t('activity5_title')}</h4>
+                                        <p>{t('activity5_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-calendar-alt"></i>
-                                        <h4>Implementation Roadmap</h4>
-                                        <p>Create a phased implementation plan with clear milestones, timelines, and resource requirements.</p>
+                                        <h4>{t('activity6_title')}</h4>
+                                        <p>{t('activity6_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-shield-alt"></i>
-                                        <h4>Risk Assessment</h4>
-                                        <p>Identify potential challenges and develop mitigation strategies to ensure smooth implementation.</p>
+                                        <h4>{t('activity7_title')}</h4>
+                                        <p>{t('activity7_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-chart-pie"></i>
-                                        <h4>ROI Modeling</h4>
-                                        <p>Detailed financial analysis showing expected costs, savings, and return on investment timelines.</p>
+                                        <h4>{t('activity8_title')}</h4>
+                                        <p>{t('activity8_description')}</p>
                                     </div>
                                 </div>
                             </div>
                             
                             <div className="step-deliverables">
-                                <h3 className="deliverables-title">Your Deliverables:</h3>
+                                <h3 className="deliverables-title">{t('your_deliverables')}</h3>
                                 <ul className="deliverables-list">
                                     <li className="deliverable-item">
                                         <i className="fas fa-project-diagram"></i>
-                                        <span><strong>Technical Blueprint:</strong> Detailed system architecture and integration specifications</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable5') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-road"></i>
-                                        <span><strong>Implementation Roadmap:</strong> Phase-by-phase plan with timelines and deliverables</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable6') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-calculator"></i>
-                                        <span><strong>ROI Analysis:</strong> Comprehensive financial impact assessment and payback calculations</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable7') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-clipboard-check"></i>
-                                        <span><strong>Success Metrics:</strong> Clear KPIs and measurement criteria for tracking progress</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable8') }} />
                                     </li>
                                 </ul>
                             </div>
@@ -257,62 +259,62 @@ const Approach = () => {
                         <div className="step-detail__header">
                             <div className="step-badge">
                                 <span className="badge-number">Step 3</span>
-                                <span className="badge-text">Precision Implementation</span>
+                                <span className="badge-text">{t('timeline_step3_title')}</span>
                             </div>
-                            <h2 className="step-detail__title">Building Your Automation Solutions</h2>
+                            <h2 className="step-detail__title">{t('step3_title')}</h2>
                             <p className="step-detail__subtitle">
-                                This is where strategy becomes reality. Our implementation process is methodical, transparent, and designed to minimize disruption while maximizing quality and reliability.
+                                {t('step3_subtitle')}
                             </p>
                         </div>
                         
                         <div className="step-detail__body">
                             <div className="step-activities">
-                                <h3 className="activities-title">What We Do:</h3>
+                                <h3 className="activities-title">{t('what_we_do')}</h3>
                                 <div className="activities-grid">
                                     <div className="activity-card">
                                         <i className="fas fa-cogs"></i>
-                                        <h4>Agile Development</h4>
-                                        <p>Build your automation solutions using iterative development cycles with regular check-ins and feedback.</p>
+                                        <h4>{t('activity9_title')}</h4>
+                                        <p>{t('activity9_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-vial"></i>
-                                        <h4>Rigorous Testing</h4>
-                                        <p>Comprehensive testing in a controlled environment before any changes affect your live operations.</p>
+                                        <h4>{t('activity10_title')}</h4>
+                                        <p>{t('activity10_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-graduation-cap"></i>
-                                        <h4>Team Training</h4>
-                                        <p>Hands-on training for your team to confidently use and maintain the new systems.</p>
+                                        <h4>{t('activity11_title')}</h4>
+                                        <p>{t('activity11_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-rocket"></i>
-                                        <h4>Phased Deployment</h4>
-                                        <p>Careful, staged rollout of automation features to minimize risk and ensure smooth adoption.</p>
+                                        <h4>{t('activity12_title')}</h4>
+                                        <p>{t('activity12_description')}</p>
                                     </div>
                                 </div>
                             </div>
                             
                             <div className="step-deliverables">
-                                <h3 className="deliverables-title">Your Deliverables:</h3>
+                                <h3 className="deliverables-title">{t('your_deliverables')}</h3>
                                 <ul className="deliverables-list">
                                     <li className="deliverable-item">
                                         <i className="fas fa-play-circle"></i>
-                                        <span><strong>Live Automation Systems:</strong> Fully functional, tested automation workflows integrated with your existing tools</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable9') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-book"></i>
-                                        <span><strong>Comprehensive Documentation:</strong> User guides, technical documentation, and process manuals</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable10') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-user-graduate"></i>
-                                        <span><strong>Trained Team:</strong> Your staff fully trained on new systems and processes</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable11') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-life-ring"></i>
-                                        <span><strong>Support Framework:</strong> Clear escalation paths and support procedures for ongoing maintenance</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable12') }} />
                                     </li>
                                 </ul>
                             </div>
@@ -328,62 +330,62 @@ const Approach = () => {
                         <div className="step-detail__header">
                             <div className="step-badge">
                                 <span className="badge-number">Step 4</span>
-                                <span className="badge-text">Partnership & Evolution</span>
+                                <span className="badge-text">{t('timeline_step4_title')}</span>
                             </div>
-                            <h2 className="step-detail__title">Ensuring Long-term Success</h2>
+                            <h2 className="step-detail__title">{t('step4_title')}</h2>
                             <p className="step-detail__subtitle">
-                                Implementation is just the beginning. We partner with you for the long haul, continuously optimizing your systems and helping you evolve as your business grows.
+                                {t('step4_subtitle')}
                             </p>
                         </div>
                         
                         <div className="step-detail__body">
                             <div className="step-activities">
-                                <h3 className="activities-title">What We Do:</h3>
+                                <h3 className="activities-title">{t('what_we_do')}</h3>
                                 <div className="activities-grid">
                                     <div className="activity-card">
                                         <i className="fas fa-chart-line"></i>
-                                        <h4>Performance Monitoring</h4>
-                                        <p>Continuous tracking of system performance and business impact with regular optimization recommendations.</p>
+                                        <h4>{t('activity13_title')}</h4>
+                                        <p>{t('activity13_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-sync-alt"></i>
-                                        <h4>System Updates</h4>
-                                        <p>Regular maintenance, security updates, and feature enhancements to keep your automation current.</p>
+                                        <h4>{t('activity14_title')}</h4>
+                                        <p>{t('activity14_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-expand-arrows-alt"></i>
-                                        <h4>Scalability Planning</h4>
-                                        <p>Strategic guidance for expanding automation as your business grows and requirements evolve.</p>
+                                        <h4>{t('activity15_title')}</h4>
+                                        <p>{t('activity15_description')}</p>
                                     </div>
                                     
                                     <div className="activity-card">
                                         <i className="fas fa-headset"></i>
-                                        <h4>Ongoing Support</h4>
-                                        <p>Responsive technical support and strategic consultation whenever you need assistance.</p>
+                                        <h4>{t('activity16_title')}</h4>
+                                        <p>{t('activity16_description')}</p>
                                     </div>
                                 </div>
                             </div>
                             
                             <div className="step-deliverables">
-                                <h3 className="deliverables-title">Your Deliverables:</h3>
+                                <h3 className="deliverables-title">{t('your_deliverables')}</h3>
                                 <ul className="deliverables-list">
                                     <li className="deliverable-item">
                                         <i className="fas fa-tachometer-alt"></i>
-                                        <span><strong>Performance Reports:</strong> Regular analytics and insights on automation effectiveness and ROI</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable13') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-wrench"></i>
-                                        <span><strong>Optimization Recommendations:</strong> Continuous improvement suggestions based on usage patterns and business changes</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable14') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-map"></i>
-                                        <span><strong>Evolution Roadmap:</strong> Strategic plan for expanding and enhancing your automation capabilities</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable15') }} />
                                     </li>
                                     <li className="deliverable-item">
                                         <i className="fas fa-handshake"></i>
-                                        <span><strong>Trusted Partnership:</strong> Ongoing relationship with automation experts who understand your business</span>
+                                        <span dangerouslySetInnerHTML={{ __html: t('deliverable16') }} />
                                     </li>
                                 </ul>
                             </div>
@@ -396,9 +398,9 @@ const Approach = () => {
             <section className="success-stories">
                 <div className="container">
                     <div className="section-header">
-                        <h2 className="section-title">Our Methodology in Action</h2>
+                        <h2 className="section-title">{t('success_stories_title')}</h2>
                         <p className="section-subtitle">
-                            See how our structured approach has delivered transformational results for businesses across industries.
+                            {t('success_stories_subtitle')}
                         </p>
                     </div>
                     
@@ -407,20 +409,20 @@ const Approach = () => {
                             <div className="story-metrics">
                                 <div className="metric">
                                     <span className="metric-number">75%</span>
-                                    <span className="metric-label">Reduction in Processing Time</span>
+                                    <span className="metric-label">{t('story1_metric1_label')}</span>
                                 </div>
                                 <div className="metric">
                                     <span className="metric-number">90%</span>
-                                    <span className="metric-label">Fewer Errors</span>
+                                    <span className="metric-label">{t('story1_metric2_label')}</span>
                                 </div>
                             </div>
                             <div className="story-content">
-                                <h3 className="story-title">E-commerce Platform Transformation</h3>
+                                <h3 className="story-title">{t('story1_title')}</h3>
                                 <p className="story-description">
-                                    A growing online retailer was drowning in manual order processing and inventory management. Our 4-step approach integrated their sales channels, automated fulfillment workflows, and created real-time inventory synchronization across multiple platforms.
+                                    {t('story1_description')}
                                 </p>
                                 <div className="story-quote">
-                                    "The O2mations team didn't just automate our processes—they transformed how we think about our operations."
+                                    {t('story1_quote')}
                                 </div>
                             </div>
                         </div>
@@ -429,20 +431,20 @@ const Approach = () => {
                             <div className="story-metrics">
                                 <div className="metric">
                                     <span className="metric-number">3x</span>
-                                    <span className="metric-label">Revenue Growth</span>
+                                    <span className="metric-label">{t('story2_metric1_label')}</span>
                                 </div>
                                 <div className="metric">
                                     <span className="metric-number">60%</span>
-                                    <span className="metric-label">Time Savings</span>
+                                    <span className="metric-label">{t('story2_metric2_label')}</span>
                                 </div>
                             </div>
                             <div className="story-content">
-                                <h3 className="story-title">Professional Services Automation</h3>
+                                <h3 className="story-title">{t('story2_title')}</h3>
                                 <p className="story-description">
-                                    A consulting firm needed to scale their client onboarding and project management processes. We created automated client intake workflows, integrated project tracking systems, and built custom reporting dashboards.
+                                    {t('story2_description')}
                                 </p>
                                 <div className="story-quote">
-                                    "We can now handle 3x more clients with the same team size, and our client satisfaction has never been higher."
+                                    {t('story2_quote')}
                                 </div>
                             </div>
                         </div>
@@ -451,20 +453,20 @@ const Approach = () => {
                             <div className="story-metrics">
                                 <div className="metric">
                                     <span className="metric-number">85%</span>
-                                    <span className="metric-label">Faster Customer Response</span>
+                                    <span className="metric-label">{t('story3_metric1_label')}</span>
                                 </div>
                                 <div className="metric">
                                     <span className="metric-number">50%</span>
-                                    <span className="metric-label">Cost Reduction</span>
+                                    <span className="metric-label">{t('story3_metric2_label')}</span>
                                 </div>
                             </div>
                             <div className="story-content">
-                                <h3 className="story-title">Customer Service Revolution</h3>
+                                <h3 className="story-title">{t('story3_title')}</h3>
                                 <p className="story-description">
-                                    A SaaS company struggled with customer support ticket management and response times. Our solution automated ticket routing, created intelligent response templates, and integrated customer data for personalized support.
+                                    {t('story3_description')}
                                 </p>
                                 <div className="story-quote">
-                                    "Our support team went from overwhelmed to empowered. They can now focus on solving complex issues instead of manual tasks."
+                                    {t('story3_quote')}
                                 </div>
                             </div>
                         </div>
@@ -476,13 +478,13 @@ const Approach = () => {
             <section className="approach-cta">
                 <div className="container">
                     <div className="approach-cta__content">
-                        <h2 className="approach-cta__title">Ready to Start Your Transformation?</h2>
+                        <h2 className="approach-cta__title">{t('approach_cta_title')}</h2>
                         <p className="approach-cta__description">
-                            Experience our proven methodology firsthand. Book a complimentary strategy session to see how our 4-step approach can transform your business operations.
+                            {t('approach_cta_description')}
                         </p>
                         <div className="approach-cta__actions">
-                            <Link to="/contact" className="btn btn--primary btn--large">Book Your Strategy Session</Link>
-                            <Link to="/solutions" className="btn btn--secondary btn--large">Explore Our Solutions</Link>
+                            <Link to="/contact" className="btn btn--primary btn--large">{t('book_your_strategy_session3')}</Link>
+                            <Link to="/solutions" className="btn btn--secondary btn--large">{t('explore_our_solutions3')}</Link>
                         </div>
                     </div>
                 </div>
